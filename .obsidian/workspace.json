@@ -1,0 +1,186 @@
+{
+  "main": {
+    "id": "377ce1d50cf3056d",
+    "type": "split",
+    "children": [
+      {
+        "id": "cc516918af623bc4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6cd877208f5fee2e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CS/C++/左值（lvalues），右值（rvalues）和参数传递.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a72b77671ed37f83",
+    "type": "split",
+    "children": [
+      {
+        "id": "4caa359b141b4aea",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ba3653c65950cba7",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "762a191ec276de5b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "cb00f6d2c92da7f9",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 419.5
+  },
+  "right": {
+    "id": "272bc9626bd52e58",
+    "type": "split",
+    "children": [
+      {
+        "id": "bd4f18fbaa0cc8d4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "19ed4c1da8a2388a",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "CS/C++/左值（lvalues），右值（rvalues）和参数传递.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "d305227d08b11967",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "CS/C++/左值（lvalues），右值（rvalues）和参数传递.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "0a9b040bacf19d1a",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": false
+              }
+            }
+          },
+          {
+            "id": "7347ebd9157ce4ab",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "CS/C++/左值（lvalues），右值（rvalues）和参数传递.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "ba3653c65950cba7",
+  "lastOpenFiles": [
+    "CS/C++/模板（template）、概念（concept）和泛型（generic）思想.md",
+    "CS/C++/编程范型（programing paradigm）和OOP.md",
+    "CS/C++/不同版本C++对auto的支持.md",
+    "CS/C++/类的构造函数（constructer）和析构函数（Destructor）.md",
+    "CS/C++/左值（lvalues），右值（rvalues）和参数传递.md",
+    "CS/CSAPP/Lab/Lab1 - Data Lab.md",
+    "CS/CSAPP/Lab/attachments/Pasted image 20240616195840.png",
+    "1.md",
+    "CS/CSAPP/Note/Chapter 2 Representing and Manipulating Information.md",
+    "CS/CSAPP/Note/Chapter 1.md",
+    "CS/CSAPP/Note/attachments/Pasted image 20240612215504.png",
+    "CS/leetcode/两数之和类.md",
+    "CS/C++",
+    "CS/leetcode",
+    "CS/CSAPP/Note/Chapter 3 Machine-Level Represnetation of Programs.md",
+    "高中物理/01-运动学.md",
+    "高中物理/磁场.md",
+    "高中物理/运动学/未命名.md",
+    "高中物理/运动学",
+    "高中物理/力学",
+    "高中物理/电场.md",
+    "CS/CSAPP/Lab/attachments/Pasted image 20240616195752.png",
+    "CS/CSAPP/Lab/attachments",
+    "高中物理/电场",
+    "高中物理",
+    "CS/CSAPP/Note/attachments/Pasted image 20240612215233.png",
+    "CS/CSAPP/Note/attachments/Pasted image 20240612215057.png",
+    "CS/CSAPP/Note/attachments",
+    "Pasted image 20240612214802.png",
+    "CS/image",
+    "未命名.md",
+    "CS/CSAPP/Lab"
+  ]
+}
