@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CS/C++/左值（lvalues），右值（rvalues）和参数传递.md",
+                "file": "CS/C++/测试.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": true
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CS/C++/左值（lvalues），右值（rvalues）和参数传递.md",
+                "file": "CS/C++/测试.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CS/C++/左值（lvalues），右值（rvalues）和参数传递.md",
+                "file": "CS/C++/测试.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CS/C++/左值（lvalues），右值（rvalues）和参数传递.md"
+                "file": "CS/C++/测试.md"
               }
             }
           }
@@ -140,7 +140,6 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "yet-another-obsidian-synchronizer:YAOS": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -149,13 +148,14 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "ba3653c65950cba7",
+  "active": "6cd877208f5fee2e",
   "lastOpenFiles": [
+    "CS/C++/左值（lvalues），右值（rvalues）和参数传递.md",
+    "CS/C++/测试.md",
     "CS/C++/模板（template）、概念（concept）和泛型（generic）思想.md",
     "CS/C++/编程范型（programing paradigm）和OOP.md",
     "CS/C++/不同版本C++对auto的支持.md",
     "CS/C++/类的构造函数（constructer）和析构函数（Destructor）.md",
-    "CS/C++/左值（lvalues），右值（rvalues）和参数传递.md",
     "CS/CSAPP/Lab/Lab1 - Data Lab.md",
     "CS/CSAPP/Lab/attachments/Pasted image 20240616195840.png",
     "1.md",
