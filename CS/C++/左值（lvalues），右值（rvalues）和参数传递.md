@@ -168,7 +168,98 @@ int main()
 
 另外需要注意，**右值引用本身是左值**，它满足可修改，有持久性的特性
 
-## 引用折叠
+一个简单的例子：
 
+```C++
+void foo(int&& v){}
+int &&x = 2;
+foo(x); // 非法，x是左值，而foo的实参必须是右值
+```
+## 引用折叠，auto&&和完美转发
 
+比较弱智的语法细节
 
+```C++
+typedef int&& rref;
+int n;
+rref&& r4 = 1;
+int&& && r5 = 1; // ill formed
+```
+
+与多级指针不同，C++明面上是禁止“对引用的引用的”，但实际上由于模板参数推导的需要，放开了它的限制。在使用typedef和template的时候，能够实际突破这个限制
+
+```C++
+void foo(int& v){}
+void bar(int&& v){}
+int x = 2;
+int &lref = x; // left ref
+int && rref = 3; // right ref
+foo(x);
+foo(3);
+foo(lref);
+bar(rref);
+```
+
+这里`v`是对传入参数的引用，但这里绑定的是引用的原始对象，跳过了“引用的引用”的陷阱
+当右值引用引入后，由此产生了一套规则，即引用折叠（Reference collapsing）
+
+| 函数形参类型 | 实参参数类型 | 推导后函数形参类型 |
+| :----: | :----: | :-------: |
+|   T&   |  左引用   |    T&     |
+|   T&   |  右引用   |    T&     |
+|  T&&   |  左引用   |    T&     |
+|  T&&   |  右引用   |    T&&    |
+对于（模板）函数，通用引用（Universal References）的方法是使用`T&&`，而lambda表达式中才能使用`auto&&`（这里需要注意，`T&&`才是特例，对于其它类型，比如`int&&`，是限定死参数的左/右值性的）
+
+不过这样仍然有问题，因为传入进去的仍然是左值，实参作为左值引用和作为右值引用的信息丢失了，无论实参是`int&&`还是`int&`，在传参过程二次调用无法识别，`T&&`知道不代表二次调用的函数`bar`知道：
+
+```C++
+void bar(int&& v){
+    cout << "right" << endl;
+}
+void bar(int& v){
+    cout << "left" << endl;
+}
+template <typename T>
+void foo(T&& v){
+    bar(v);
+}
+int x = 2;
+foo(x); // output : left
+foo(2); // output : left
+```
+
+解决方法就是使用`std::forward`进行完美转发（Perfect Forwarding）
+
+```C++
+void bar(int&& v){
+    cout << "right" << endl;
+}
+void bar(int& v){
+    cout << "left" << endl;
+}
+template <typename T>
+void foo(T&& v){
+    bar(std::forward<T>(v));
+}
+foo(x); // output : left
+foo(2); // output : right
+```
+
+从结果来看，和`static_cast<T&&>(v)`差不多
+
+	TODO : forward的具体实现原理
+
+```C++
+template<typename _Tp>  
+constexpr _Tp&& forward(typename std::remove_reference<_Tp>::type& __t) noexcept  
+{ return static_cast<_Tp&&>(__t); }  
+  
+template<typename _Tp>  
+constexpr _Tp&& forward(typename std::remove_reference<_Tp>::type&& __t) noexcept  
+{  
+    static_assert(!std::is_lvalue_reference<_Tp>::value, "template argument"  
+        " substituting _Tp is an lvalue reference type");  
+    return static_cast<_Tp&&>(__t);  
+}
+```

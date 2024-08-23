@@ -49,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "push",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -148,7 +148,7 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "6cd877208f5fee2e",
+  "active": "ba3653c65950cba7",
   "lastOpenFiles": [
     "CS/C++/模板（template）、概念（concept）和泛型（generic）思想.md",
     "CS/C++/类的构造函数（constructer）和析构函数（Destructor）.md",
