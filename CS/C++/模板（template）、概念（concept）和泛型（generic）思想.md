@@ -1,4 +1,4 @@
-	Generic programming centers around the idea of abstracting from concrete, efficient algorithms to obtain generic algorithms that can be combined with different data representations to produce a wide variety of useful software.
+Generic programming centers around the idea of abstracting from concrete, efficient algorithms to obtain generic algorithms that can be combined with different data representations to produce a wide variety of useful software.
 
 ## 1. 应用的角度
 
@@ -152,7 +152,7 @@ print("test", 1, 3.14); // test 1 3.14
 
 而从上而下看，根据具体的场景选择合适的抽象方式和程度，可以给予程序员更强大的表达能力。引用SICP中的话就是：
 
-	In general, we can think of data as defined by some collection of selectors and constructors, together with specified conditions that these procedures must fulfill in order to be a valid representation
+In general, we can think of data as defined by some collection of selectors and constructors, together with specified conditions that these procedures must fulfill in order to be a valid representation
 
 而像领域特定语言（Domain-Specific Languages，DSL）正是一精神的最直接体现。
 
